@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Mohamed Amine Shili | Personal ID</title>
 
@@ -21,28 +16,21 @@
     <section class="card">
 
       <!-- PROFILE -->
-
       <div class="top">
 
         <img
           class="profile-photo"
-          src="assets/mohamed-amine.jpg"
+          src="Screenshot_20260915-140441.png"
           alt="Photo de Mohamed Amine Shili"
         >
 
         <div class="profile-text">
 
-          <span class="label">
-            PERSONAL ID
-          </span>
+          <span class="label">PERSONAL ID</span>
 
-          <h1>
-            Mohamed Amine Shili
-          </h1>
+          <h1>Mohamed Amine Shili</h1>
 
-          <p>
-            Tunis — Tunisie
-          </p>
+          <p>Tunis — Tunisie</p>
 
         </div>
 
@@ -50,34 +38,21 @@
 
 
       <!-- PROFESSION -->
-
       <div class="profession">
-
         🔧 Maintenance biomédicale
-
       </div>
 
 
-      <!-- CONTACT INFORMATION -->
-
+      <!-- INFORMATIONS -->
       <div class="info">
 
         <div class="item">
 
-          <span class="icon">
-            ☎
-          </span>
+          <span class="icon">☎</span>
 
           <div>
-
-            <small>
-              Téléphone
-            </small>
-
-            <strong>
-              57030978
-            </strong>
-
+            <small>Téléphone</small>
+            <strong>57030978</strong>
           </div>
 
         </div>
@@ -85,20 +60,11 @@
 
         <div class="item">
 
-          <span class="icon">
-            💬
-          </span>
+          <span class="icon">💬</span>
 
           <div>
-
-            <small>
-              WhatsApp
-            </small>
-
-            <strong>
-              +216 93 484 789
-            </strong>
-
+            <small>WhatsApp</small>
+            <strong>+216 93 484 789</strong>
           </div>
 
         </div>
@@ -106,20 +72,11 @@
 
         <div class="item">
 
-          <span class="icon">
-            ⌖
-          </span>
+          <span class="icon">⌖</span>
 
           <div>
-
-            <small>
-              Adresse
-            </small>
-
-            <strong>
-              Tunis, Tunisie
-            </strong>
-
+            <small>Adresse</small>
+            <strong>Tunis, Tunisie</strong>
           </div>
 
         </div>
@@ -127,8 +84,7 @@
       </div>
 
 
-      <!-- MAIN BUTTONS -->
-
+      <!-- BUTTONS -->
       <div class="buttons">
 
         <a
@@ -152,12 +108,9 @@
 
 
       <!-- SOCIAL NETWORKS -->
-
       <div class="social">
 
-        <h2>
-          Mes réseaux
-        </h2>
+        <h2>Mes réseaux</h2>
 
 
         <a
@@ -179,61 +132,36 @@
           ✈️ Telegram @Muhamadaminshili
         </a>
 
-      </div>
-
-
-      <!-- TELEGRAM QR -->
-
-      <div class="telegram-qr">
-
-        <h2>
-          Mon QR Telegram
-        </h2>
-
-        <p>
-          Scannez pour me contacter sur Telegram.
-        </p>
-
-
-        <img
-          src="assets/telegram-qr.png"
-          alt="QR Code Telegram de Mohamed Amine Shili"
-        >
-
 
         <a
-          class="button download"
-          href="assets/telegram-qr.png"
-          download="Mohamed-Amine-Shili-Telegram-QR.png"
+          class="button"
+          href="https://wa.me/21693484789"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Télécharger le QR Telegram
+          💬 WhatsApp
         </a>
 
       </div>
 
 
-      <!-- PERSONAL QR -->
-
+      <!-- QR CODE -->
       <div class="qr">
 
-        <h2>
-          Mon QR Code
-        </h2>
+        <h2>Mon QR Code</h2>
 
         <p>
           Scannez pour ouvrir ma carte personnelle.
         </p>
 
-
         <img
-          src="assets/personal-qr.png"
+          src="Screenshot_20260915-145323.png"
           alt="QR Code Personal ID de Mohamed Amine Shili"
         >
 
-
         <a
           class="button download"
-          href="assets/personal-qr.png"
+          href="Screenshot_20260915-145323.png"
           download="Mohamed-Amine-Shili-QR.png"
         >
           Télécharger le QR Code
@@ -242,10 +170,9 @@
       </div>
 
 
+      <!-- FOOTER -->
       <footer>
-
         © 2026 Mohamed Amine Shili
-
       </footer>
 
     </section>
@@ -253,47 +180,36 @@
   </main>
 
 
-  <!-- ==========================================
-       TOUCH / MOUSE LIGHT
-       ========================================== -->
-
+  <!-- LIGHT EFFECT -->
   <script>
 
     const card = document.querySelector(".card");
-
 
     function moveLight(x, y) {
 
       const rect = card.getBoundingClientRect();
 
-
       const mouseX =
         ((x - rect.left) / rect.width) * 100;
 
-
       const mouseY =
         ((y - rect.top) / rect.height) * 100;
-
 
       card.style.setProperty(
         "--mouse-x",
         mouseX + "%"
       );
 
-
       card.style.setProperty(
         "--mouse-y",
         mouseY + "%"
       );
-
     }
 
 
-    /* COMPUTER / MOUSE */
-
     card.addEventListener(
       "mousemove",
-      function (event) {
+      function(event) {
 
         moveLight(
           event.clientX,
@@ -304,11 +220,9 @@
     );
 
 
-    /* PHONE / TOUCH */
-
     card.addEventListener(
       "touchmove",
-      function (event) {
+      function(event) {
 
         if (event.touches.length > 0) {
 
@@ -320,17 +234,13 @@
         }
 
       },
-      {
-        passive: true
-      }
+      { passive: true }
     );
 
 
-    /* RETURN LIGHT TO CENTER */
-
     card.addEventListener(
       "mouseleave",
-      function () {
+      function() {
 
         card.style.setProperty(
           "--mouse-x",
@@ -348,5 +258,4 @@
   </script>
 
 </body>
-
-  </html>
+</html>
