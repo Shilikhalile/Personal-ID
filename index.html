@@ -16,10 +16,10 @@
 
         <main class="card">
 
-            <!-- TOP PROFILE -->
+            <!-- PROFILE -->
+
             <section class="top">
 
-                <!-- PHOTO -->
                 <img
                     class="profile-photo"
                     src="Screenshot_20260915-140441.png"
@@ -46,6 +46,7 @@
 
 
             <!-- PROFESSION -->
+
             <section class="profession">
 
                 🔧 Maintenance biomédicale
@@ -53,7 +54,8 @@
             </section>
 
 
-            <!-- INFORMATIONS -->
+            <!-- INFORMATION -->
+
             <section class="info">
 
                 <div class="item">
@@ -109,7 +111,8 @@
             </section>
 
 
-            <!-- 3D BUTTONS -->
+            <!-- MAIN 3D BUTTONS -->
+
             <section class="buttons">
 
                 <a
@@ -124,4 +127,165 @@
                     class="button"
                     href="https://wa.me/21693484789"
                     target="_blank"
-                   
+                    rel="noopener noreferrer"
+                >
+                    💬 WhatsApp
+                </a>
+
+            </section>
+
+
+            <!-- SOCIAL NETWORKS -->
+
+            <section class="social">
+
+                <h2>
+                    Réseaux sociaux
+                </h2>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    class="button dark"
+                    href="https://www.instagram.com/muhammad.amin.shili?stkn=MW5uemI2bGtkMm84Yw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    📸 Instagram
+                </a>
+
+
+                <!-- TELEGRAM -->
+
+                <a
+                    class="button dark"
+                    href="https://t.me/Muhamadaminshili"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ✈️ Telegram
+                </a>
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    class="button dark"
+                    href="https://wa.me/21693484789"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    💚 WhatsApp
+                </a>
+
+            </section>
+
+
+            <!-- QR CODE -->
+
+            <section class="qr">
+
+                <h2>
+                    Scan Personal ID
+                </h2>
+
+                <p>
+                    Scannez le QR Code pour accéder aux informations.
+                </p>
+
+
+                <!-- QR CODE CORRECT -->
+
+                <img
+                    src="Screenshot_20260915-151410.png"
+                    alt="QR Code de Mohamed Amine Shili"
+                >
+
+
+                <!-- DOWNLOAD QR -->
+
+                <a
+                    class="button download"
+                    href="Screenshot_20260915-151410.png"
+                    download="Mohamed-Amine-Shili-QR.png"
+                >
+                    ⬇️ Télécharger le QR
+                </a>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <footer>
+
+                © 2026 Mohamed Amine Shili
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- MOVING LIGHT -->
+
+    <script>
+
+        const card = document.querySelector(".card");
+
+
+        document.addEventListener("mousemove", function(event) {
+
+            const rect = card.getBoundingClientRect();
+
+            const x = event.clientX - rect.left;
+
+            const y = event.clientY - rect.top;
+
+
+            card.style.setProperty(
+                "--mouse-x",
+                x + "px"
+            );
+
+            card.style.setProperty(
+                "--mouse-y",
+                y + "px"
+            );
+
+        });
+
+
+        document.addEventListener("touchmove", function(event) {
+
+            if (event.touches.length === 0) return;
+
+
+            const rect = card.getBoundingClientRect();
+
+            const x =
+                event.touches[0].clientX - rect.left;
+
+            const y =
+                event.touches[0].clientY - rect.top;
+
+
+            card.style.setProperty(
+                "--mouse-x",
+                x + "px"
+            );
+
+            card.style.setProperty(
+                "--mouse-y",
+                y + "px"
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>
